@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Welcome to the login page'),
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(widget.title,
             style: TextStyle(color: Theme.of(context).colorScheme.onPrimary)),
-            centerTitle: true,
+        centerTitle: true,
       ),
       body: Center(
         child: Padding(
@@ -72,14 +72,14 @@ class _MyHomePageState extends State<MyHomePage> {
               TextButton(onPressed: () {}, child: Text("forget password")),
               ElevatedButton(onPressed: () {}, child: Text("Login")),
               Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-              Text("Don't have an account?"),
-              SizedBox(width: 5),
-              TextButton(onPressed: () {}, child: Text("Sign in")),
-              ],
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Don't have an account?"),
+                  SizedBox(width: 5),
+                  TextButton(onPressed: () {}, child: Text("Sign in")),
+                ],
               )
-          ],
+            ],
           ),
         ),
       ),
